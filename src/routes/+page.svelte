@@ -249,7 +249,9 @@
     #hours p{
         font-size: 0.5em;
     }
-
+    #landing {
+      background-position: center;
+    }
 }
   </style>
   
