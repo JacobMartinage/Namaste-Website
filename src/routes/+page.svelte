@@ -253,11 +253,11 @@
     }
     #landing {
       background-position: center;
-      background: url('/mobilebg.png'); 
+      background: url('/landing.png'); 
     }
     body{
       background-size: cover;
-      background: url('/mobilebg.png');
+      background: url('/landing.png');
     }
 }
   </style>
