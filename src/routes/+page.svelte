@@ -234,7 +234,7 @@
     padding: 0.5em; /* Add some padding */
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     nav ul {
       align-items: center;
       font-size: 0.2em;
@@ -254,9 +254,13 @@
     #landing {
       background-position: center;
     }
+    body{
+      background-size: cover;
+    
+    }
 }
   </style>
-  
+  <body>
   <nav>
     <ul>
         <li><a href="#landing" on:click={scrollToSection}>Home</a></li>
@@ -334,3 +338,4 @@
     <img src="facebook.png" alt="Visit us on Facebook" class="social-button" />
   </a>
 </section>
+</body>
