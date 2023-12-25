@@ -112,6 +112,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
+    background-position: center;
   }
   #company-logo {
     max-width: 25%; /* Make the logo a quarter of its current width */
