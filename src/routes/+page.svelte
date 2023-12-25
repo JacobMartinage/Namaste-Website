@@ -43,6 +43,7 @@
     -o-background-size: cover;
     background-size: cover;
     scroll-behavior: smooth;
+    background-position: center;
     }
     nav {
     background-color: rgba(221, 161, 168, 0.8); /* Changed to translucent */
