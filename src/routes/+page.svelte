@@ -142,6 +142,9 @@
 .about-img {
     display: block;
     margin: 0 auto;
+    width:25%;
+    aspect-ratio: 1;
+    
   }
 
   #menu {
@@ -280,20 +283,19 @@
     <h2>About Us</h2>
     <div class="about-content">
         <div class="about-section" id="owner-info">.
-            <img class="about-img" src="owner.png" alt="Owner's Picture" />
-        <h3>John Doe, Founder</h3>
+            <img class="about-img" src="momos.png" alt="Owner's Picture" />
         <p>
-          Our story began in the heart of Nepal, where our founder, John Doe, was born and raised. Growing up in a culture rich with culinary traditions, John was introduced to the unique flavors and techniques of Nepali cuisine from a young age.
+          Our story began in the heart of Nepal, where food holds a large stake in our culutre. Our menu is calculated in order to create the most authentic experience possible and transport you to the valleys of the Himalayas we grew from.
         </p>
       </div>
       <div class="about-section" id="nepali-food">
-        <img class="about-img" src="owner.png" alt="Nepali Food" />
+        <img class="about-img" src="momos3.png" alt="Nepali Food" />
         <p>
           What makes Nepali food special is its fusion of flavors. Influenced by its neighboring countries, India, Tibet, and China, Nepali cuisine is a delightful blend of taste and texture. The use of local herbs and spices, combined with traditional cooking methods, results in dishes that are both flavorful and nutritious.
         </p>
       </div>
       <div class="about-section" id="our-mission">
-        <img class="about-img" src="owner.png" alt="Our Mission" />
+        <img class="about-img" src="momos4.png" alt="Our Mission" />
         <p>
           At our restaurant, we aim to bring the authentic taste of Nepal to your plate. We believe in preserving the traditional recipes while also adding our unique twist. We hope you enjoy the journey of flavors as much as we enjoy preparing them for you.
         </p>
