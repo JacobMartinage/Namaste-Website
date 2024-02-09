@@ -328,16 +328,16 @@
 <section id="contact">
   <h2>Contact Us</h2>
   <p>We'd love to hear from you! You can reach us at:</p>
-  <p><strong>Phone:</strong> (123) 456-7890</p>
-  <p><strong>Email:</strong> info@restaurant.com</p>
-  <p><strong>Address:</strong> 123 Main St, Anytown, USA</p>
-  <a href="tel:1234567890">
+  <p><strong>Phone:</strong> (540) 818-5767</p>
+  <p><strong>Email:</strong> HammroKitchen01@gmail.com</p>
+  <p><strong>Address:</strong> 403 Draper Road SW, Blacksburg, VA</p>
+  <a href="tel:5408185767">
     <img src="phone.png" alt="Call us" class="social-button" />
   </a>
-  <a href="mailto:info@restaurant.com">
+  <a href="mailto:HammroKitchen01@gmail.com">
     <img src="email.png" alt="Email us" class="social-button email" />
   </a>
-  <a href="https://www.facebook.com/restaurant" target="_blank">
+  <a href="https://www.facebook.com/profile.php?id=100088281829800&mibextid=LQQJ4d" target="_blank">
     <img src="facebook.png" alt="Visit us on Facebook" class="social-button" />
   </a>
 </section>
