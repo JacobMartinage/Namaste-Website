@@ -56,6 +56,7 @@
     width: 100%;
     font-size: 1em;
     font-family: 'Slabo 27px', serif;
+    z-index: 1000;
   }
   nav ul {
     list-style-type: none;
@@ -100,6 +101,9 @@
     max-width: 200px;
     border-radius: 50%;
     border: 5px solid #FF6600; /* Burnt orange border */
+    align-items: center;
+    flex: auto;
+    z-index: -1;
   }
   #about p {
     font-size: 1.8em; /* Increase the font size */
@@ -284,21 +288,21 @@
     <h2>About Us</h2>
     <div class="about-content">
         <div class="about-section" id="owner-info">.
-            <img class="about-img" src="momos.png" alt="Owner's Picture" />
+            <img class="about-img" src="food3.png" alt="Owner's Picture" />
         <p>
-          Our story began in the heart of Nepal, where food holds a large stake in our culutre. Our menu is calculated in order to create the most authentic experience possible and transport you to the valleys of the Himalayas we grew from.
+          Experience the rich and authentic flavors of Nepal at Namaste Kitchen. We serve traditional Nepali dishes like momos, Chawmin Newari cuisine, and more, crafted with fresh ingredients and spices that capture the essence of the Himalayas. 
         </p>
       </div>
       <div class="about-section" id="nepali-food">
-        <img class="about-img" src="momos3.png" alt="Nepali Food" />
+        <img class="about-img" src="food1.png" alt="Nepali Food" />
         <p>
-          What makes Nepali food special is its fusion of flavors. Influenced by its neighboring countries, India, Tibet, and China, Nepali cuisine is a delightful blend of taste and texture. The use of local herbs and spices, combined with traditional cooking methods, results in dishes that are both flavorful and nutritious.
+          At our restaurant, we aim to bring the authentic taste of Nepal to your plate. We believe in preserving the traditional recipes while also adding our unique twist. We hope you enjoy the journey of flavors as much as we enjoy preparing them for you.
         </p>
       </div>
       <div class="about-section" id="our-mission">
-        <img class="about-img" src="momos4.png" alt="Our Mission" />
+        <img class="about-img" src="food2.png" alt="Our Mission" />
         <p>
-          At our restaurant, we aim to bring the authentic taste of Nepal to your plate. We believe in preserving the traditional recipes while also adding our unique twist. We hope you enjoy the journey of flavors as much as we enjoy preparing them for you.
+          Our warm, inviting ambiance and friendly staff make us the perfect spot for family meals, casual dining, or special occasions. We look forward to welcoming you to Namaste Kitchen and sharing our love for Nepali cuisine with you.
         </p>
       </div>
     </div>
@@ -313,17 +317,17 @@
     <h2>Our Hours</h2>
     <div class="hours-grid">
       <div>
-        <p><strong>Monday:</strong> <br> 10:30am - 3pm<br> 5pm - 10pm</p>
-        <p><strong>Wednesday:</strong> <br> 10:30am - 3pm<br> 5pm - 10pm</p>
-        <p><strong>Friday:</strong> <br> 10:30am - 3pm<br> 5pm - 11pm</p>
+        <p><strong>Monday:</strong> <br> Closed</p>
+        <p><strong>Wednesday:</strong> <br> 11am - 3pm<br> 5pm - 10pm</p>
+        <p><strong>Friday:</strong> <br> 11am - 3pm<br> 5pm - 10pm</p>
       </div>
       <div>
-        <p><strong>Tuesday:</strong> <br> Closed</p>
-        <p><strong>Thursday:</strong> <br> 10:30am - 3pm<br> 5pm - 10pm</p>
-        <p><strong>Saturday:</strong> <br> 10:30am - 3pm<br> 5pm - 11pm</p>
+        <p><strong>Tuesday:</strong> <br> 11am - 3pm<br> 5pm - 10pm</p>
+        <p><strong>Thursday:</strong> <br> 11am - 3pm<br> 5pm - 10pm</p>
+        <p><strong>Saturday:</strong> <br> 11am - 3pm<br> 5pm - 10pm</p>
       </div>
     </div>
-    <p class="sunday"><strong>Sunday:</strong> <br> 10:30am - 3pm<br> 5pm - 10pm</p>
+    <p class="sunday"><strong>Sunday:</strong> <br> 11am - 3pm<br> 5pm - 10pm</p>
   </section>
 
 <section id="contact">
@@ -331,8 +335,8 @@
   <p>We'd love to hear from you! You can reach us at:</p>
   <p><strong>Phone:</strong> (540) 818-5767</p>
   <p><strong>Email:</strong> HamroKitchen01@gmail.com</p>
-  <p><strong>Address:</strong> 403 Draper Road SW, Blacksburg, VA</p>
-  <a href="tel:5408185767">
+  <p><strong>Address:</strong>  239 North Main Street, Blacksburg, VA</p>
+  <a href="tel:5408061219">
     <img src="phone.png" alt="Call us" class="social-button" />
   </a>
   <a href="mailto:HamroKitchen01@gmail.com">
