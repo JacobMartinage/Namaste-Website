@@ -339,7 +339,7 @@
   <a href="tel:5408061219">
     <img src="phone.png" alt="Call us" class="social-button" />
   </a>
-  <a href="mailto:HamroKitchen01@gmail.com">
+  <a href="mailto:namastekitchen03@gmail.com">
     <img src="email.png" alt="Email us" class="social-button email" />
   </a>
   <a href="https://www.facebook.com/profile.php?id=100088281829800&mibextid=LQQJ4d" target="_blank">
