@@ -37,7 +37,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
     :global(body) {
-    background: url('/landing.png') no-repeat center center fixed; 
+    background: url('/namaste_landing.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -46,7 +46,7 @@
     background-position: center;
     }
     nav {
-    background-color: rgba(221, 161, 168, 0.8); /* Changed to translucent */
+    background-color: rgba(222, 120, 65, 0.9); /* Changed to translucent */
     color: #fff;
     padding: 0.5em; /* Reduced padding to make nav bar smaller */
     position: fixed;
@@ -114,6 +114,7 @@
     align-items: center;
     height: 100vh; /* Full viewport height */
     background-position: center;
+    margin-top: 14em;
   }
   #company-logo {
     max-width: 25%; /* Make the logo a quarter of its current width */
@@ -256,11 +257,11 @@
     }
     #landing {
       background-position: center;
-      background: url('/landing.png'); 
+      background: url('/namaste_landing.png'); 
     }
     body{
       background-size: cover;
-      background: url('/landing.png');
+      background: url('/namaste_landing.png');
     }
 }
   </style>
@@ -276,7 +277,7 @@
   </nav>
 
   <section id="landing">
-    <img src="logo.png" alt="Company Logo" id="company-logo" />
+    <img src="namaste_logo.png" alt="Company Logo" id="company-logo" />
   </section>
   
   <section id="about">
