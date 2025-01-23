@@ -278,7 +278,7 @@
     <ul>
         <li><a href="#landing" on:click={scrollToSection}>Home</a></li>
         <li><a href="#about" on:click={scrollToSection}>About</a></li>
-        <li><a href="#menu" on:click={scrollToSection}>Menu</a></li>
+        <li><a href="/menu"> Menu </a></li>  
         <li><a href="#hours" on:click={scrollToSection}>Hours</a></li>
         <li><a href="#contact" on:click={scrollToSection}>Contact</a></li>
     </ul>
@@ -316,6 +316,7 @@
     <h2>Our Menu</h2>
     <p>Discover the authentic taste of Nepal. Click the button below to explore our menu.</p>
     <a href="/menu" class="menu-button">View Menu</a>
+    <a href="/order" class="menu-button">Order</a>
   </section>
   <section id="hours">
     <h2>Our Hours</h2>
