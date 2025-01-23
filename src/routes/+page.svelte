@@ -4,6 +4,10 @@
     
     import { onMount } from 'svelte';
 
+    import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+    import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+    import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+
   onMount(() => {
     const sections = document.querySelectorAll('.about-section');
 
@@ -330,20 +334,20 @@
     <p class="sunday"><strong>Sunday:</strong> <br> 11am - 3pm<br> 5pm - 10pm</p>
   </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>We'd love to hear from you! You can reach us at:</p>
-  <p><strong>Phone:</strong> (540) 818-5767</p>
-  <p><strong>Email:</strong> HamroKitchen01@gmail.com</p>
-  <p><strong>Address:</strong>  239 North Main Street, Blacksburg, VA</p>
-  <a href="tel:5408061219">
-    <img src="phone.png" alt="Call us" class="social-button" />
-  </a>
-  <a href="mailto:namastekitchen03@gmail.com">
-    <img src="email.png" alt="Email us" class="social-button email" />
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=100088281829800&mibextid=LQQJ4d" target="_blank">
-    <img src="facebook.png" alt="Visit us on Facebook" class="social-button" />
-  </a>
-</section>
-</body>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! You can reach us at:</p>
+    <p><strong>Phone:</strong> (540) 818-5767</p>
+    <p><strong>Email:</strong> namastekitchen03@gmail.com</p>
+    <p><strong>Address:</strong>  239 North Main Street, Blacksburg, VA</p>
+    <a href="tel:5408061219" aria-label="Call us">
+      <FontAwesomeIcon icon={faPhone} class="icon" />
+    </a>
+    <a href="mailto:namastekitchen03@gmail.com" aria-label="Email us">
+      <FontAwesomeIcon icon={faEnvelope} class="icon" />
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100088281829800&mibextid=LQQJ4d" target="_blank" aria-label="Visit us on Facebook">
+      <FontAwesomeIcon icon={faFacebook} class="icon" />
+    </a>
+  </section>
+  </body>
