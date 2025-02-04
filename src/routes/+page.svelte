@@ -200,6 +200,14 @@
   .social-button.email { /* Add a new class for the email button */
     width: 60px; /* Make the email logo a bit wider */
   }
+
+  .line-break {
+    background-color: #fff;  /* Adjust color */
+    height: 3px;  /* Adjust thickness */ /* Adjust color */
+    width: 75%;  /* Ensure full width */
+    border-radius: 5px;
+}
+
   #contact p {
     font-size: 0.8em; /* Increase the font size */
     margin-bottom: 1em; /* Add some margin */
@@ -313,12 +321,15 @@
   </section>
   
   <section id="menu">
+    <hr class="line-break"/>
     <h2>Our Menu</h2>
     <p>Discover the authentic taste of Nepal. Click the button below to explore our menu.</p>
     <a href="/menu" class="menu-button">View Menu</a>
     <a href="/order" class="menu-button">Order</a>
   </section>
+
   <section id="hours">
+    <hr class="line-break"/>
     <h2>Our Hours</h2>
     <div class="hours-grid">
       <div>
@@ -336,6 +347,7 @@
   </section>
 
   <section id="contact">
+    <hr class="line-break"/>
     <h2>Contact Us</h2>
     <p>We'd love to hear from you! You can reach us at:</p>
     <p><strong>Phone:</strong> (540) 818-5767</p>
