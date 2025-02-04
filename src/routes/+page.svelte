@@ -95,6 +95,13 @@
 		aspect-ratio: 1;
 	}
 
+  .line-break {
+    border-radius: 5px;
+    height: 3px;
+    background: #ffffff;
+    width: 70%;
+  }
+
 	#landing {
 		display: flex;
 		justify-content: center;
