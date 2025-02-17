@@ -113,14 +113,15 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100vh;
-		background-position: center;
+		min-height: 100vh;
 		margin-top: 14em;
+		padding: 1em;
 	}
 
 	#company-logo {
 		max-width: 25%;
 		height: auto;
+		width: auto;
 	}
 
 	#hours h2 {
@@ -165,6 +166,17 @@
 
 		.hours-box p {
 			font-size: 1em;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		#company-logo {
+			max-width: 80%;
+			margin-top: -8em;
+		}
+
+		#landing {
+			margin-top: 8em;
 		}
 	}
 
