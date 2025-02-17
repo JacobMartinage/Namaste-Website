@@ -3,6 +3,13 @@
 	import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 	import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+	import MenuModal from '$lib/MenuModal.svelte';
+
+	let isMenuOpen = false;
+
+	function toggleMenu() {
+		isMenuOpen = !isMenuOpen;
+	}
 
 	onMount(() => {
 		const sections = document.querySelectorAll('.about-section');
@@ -160,6 +167,21 @@
 			font-size: 1em;
 		}
 	}
+
+	.menu-button {
+		display: inline-block;
+		padding: 0.5em 1em;
+		margin: 0.5em;
+		background-color: rgba(222, 120, 65, 0.9);
+		color: white;
+		text-decoration: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.menu-button:hover {
+		background-color: rgba(222, 120, 65, 1);
+	}
 </style>
 
 <body>
@@ -167,7 +189,7 @@
 		<ul>
 			<li><a href="#landing" on:click={scrollToSection}>Home</a></li>
 			<li><a href="#about" on:click={scrollToSection}>About</a></li>
-			<li><a href="/menu">Menu</a></li>
+			<li><button class="menu-button" on:click={toggleMenu}>Menu</button></li>
 			<li><a href="#hours" on:click={scrollToSection}>Hours</a></li>
 			<li><a href="#contact" on:click={scrollToSection}>Contact</a></li>
 		</ul>
@@ -191,8 +213,7 @@
     <hr class="line-break"/>
 		<h2>Our Menu</h2>
 		<p>Discover the authentic taste of Nepal.</p>
-		<a href="/menu" class="menu-button">View Menu</a>
-		<a href="/order" class="menu-button">Order</a>
+		<button class="menu-button" on:click={toggleMenu}>View Menu</button>
 	</section>
 
 
@@ -229,4 +250,6 @@
       <FontAwesomeIcon icon={faFacebook} class="icon" />
     </a>
   </section>
-  </body>
+
+  <MenuModal isOpen={isMenuOpen} onClose={() => isMenuOpen = false} />
+</body>
