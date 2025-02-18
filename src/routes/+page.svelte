@@ -198,11 +198,11 @@
 
 <body>
 	<nav>
-		<ul>
-			<li><a href="#landing" on:click={scrollToSection}>Home</a></li>
-			<li><a href="#about" on:click={scrollToSection}>About</a></li>
-			<li><button class="menu-button" on:click={toggleMenu}>Menu</button></li>
-			<li><a href="#hours" on:click={scrollToSection}>Hours</a></li>
+		<ul style="display: flex; align-items: center;">
+			<li style="margin-right: 1em;"><a href="#landing" on:click={scrollToSection}>Home</a></li>
+			<li style="margin-right: 1em;"><a href="#about" on:click={scrollToSection}>About</a></li>
+			<li style="margin-right: 1em;"><button class="menu-button" on:click={toggleMenu}>Menu</button></li>
+			<li style="margin-right: 1em;"><a href="#hours" on:click={scrollToSection}>Hours</a></li>
 			<li><a href="#contact" on:click={scrollToSection}>Contact</a></li>
 		</ul>
 	</nav>
