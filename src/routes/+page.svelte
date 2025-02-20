@@ -249,7 +249,7 @@
     <hr class="line-break"/>
     <h2>Contact Us</h2>
     <p>We'd love to hear from you! You can reach us at:</p>
-    <p><strong>Phone:</strong> (540) 818-5767</p>
+    <p><strong>Phone:</strong> (540) 806-1219</p>
     <p><strong>Email:</strong> namastekitchen03@gmail.com</p>
     <p><strong>Address:</strong>  239 North Main Street, Blacksburg, VA</p>
     <a href="tel:5408061219" aria-label="Call us">
