@@ -197,7 +197,7 @@
 	}
 
 	.menu-button:hover {
-		background-color: rgba(222, 120, 65, 1);
+		background-color: rgb(0, 0, 0);
 	}
 </style>
 
