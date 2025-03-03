@@ -79,7 +79,7 @@
 	}
 
 	nav ul li a:hover {
-		color: #ff6347;
+		color: #000000;
 	}
 
 	#about, #menu, #hours, #contact {
@@ -192,7 +192,7 @@
 	}
 
 	.menu-button:hover {
-		background-color: rgba(222, 120, 65, 1);
+		background-color: rgb(0, 0, 0);
 	}
 </style>
 
