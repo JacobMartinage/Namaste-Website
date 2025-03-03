@@ -51,7 +51,7 @@
 	}
 
 	nav {
-		background-color: rgba(222, 120, 65, 0.9);
+		background-color: rgba(222, 120, 65, 1);
 		color: #fff;
 		padding: 0.5em;
 		position: fixed;
@@ -79,7 +79,8 @@
 	}
 
 	nav ul li a:hover {
-		color: #ff6347;
+		color: #000000;
+		font-weight: bold;
 	}
 
 	#about, #menu, #hours, #contact {
@@ -166,6 +167,10 @@
 
 		.hours-box p {
 			font-size: 1em;
+		}
+
+		#contact p {
+			font-size: 0.8em;
 		}
 	}
 
