@@ -44,10 +44,23 @@
 	@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 
 	:global(body) {
+		margin: 0;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.background {
 		background: url('/namaste_landing.png') no-repeat center center fixed;
-		background-size: cover;
-		scroll-behavior: smooth;
-		background-position: center;
+		background-size: auto;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
+	.content {
+		overflow-y: auto;
+		height: 100vh;
 	}
 
 	nav {
@@ -68,14 +81,14 @@
 		list-style-type: none;
 		padding: 0;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
 	}
 
 	nav ul li a {
 		color: #fff;
 		text-decoration: none;
 		font-size: 1.2em;
-		padding: 0.5em;
+		padding: 0.1em;
 	}
 
 	nav ul li a:hover {
@@ -85,7 +98,7 @@
 
 	#about, #menu, #hours, #contact {
 		text-align: center;
-		padding: 2em 0;
+		padding: 1em 0;
 		background-color: rgba(153, 51, 51, 0.8);
 		color: #fff;
 		font-size: 2em;
@@ -202,71 +215,73 @@
 </style>
 
 <body>
-	<nav>
-		<ul style="display: flex; align-items: center;">
-			<li style="margin-right: 1em;"><a href="#landing" on:click={scrollToSection}>Home</a></li>
-			<li style="margin-right: 1em;"><a href="#about" on:click={scrollToSection}>About</a></li>
-			<li style="margin-right: 1em;"><button class="menu-button" on:click={toggleMenu}>Menu</button></li>
-			<li style="margin-right: 1em;"><a href="#hours" on:click={scrollToSection}>Hours</a></li>
-			<li><a href="#contact" on:click={scrollToSection}>Contact</a></li>
-		</ul>
-	</nav>
+	<div class="background"></div>
+	<div class="content">
+		<nav>
+			<ul style="display: flex; align-items: center; justify-content: space-evenly;">
+				<li style=""><a href="#landing" on:click={scrollToSection}>Home</a></li>
+				<li style=""><a href="#about" on:click={scrollToSection}>About</a></li>
+				<li><button class="menu-button" on:click={toggleMenu}>Menu</button></li>
+				<li style=""><a href="#hours" on:click={scrollToSection}>Hours</a></li>
+				<li style="margin-right: 1em;"><a href="#contact" on:click={scrollToSection}>Contact</a></li>
+			</ul>
+		</nav>
 
-	<section id="landing">
-		<img src="namaste_logo.png" alt="Company Logo" id="company-logo" />
-	</section>
+		<section id="landing">
+			<img src="namaste_logo.png" alt="Company Logo" id="company-logo" />
+		</section>
 
-	<section id="about">
-		<h2>About Us</h2>
-		<div class="about-content">
-			<div class="about-section">
-				<img class="about-img" src="food3.png" alt="Owner's Picture" />
-				<p>Experience the rich and authentic flavors of Nepal at Namaste Kitchen...</p>
+		<section id="about">
+			<h2>About Us</h2>
+			<div class="about-content">
+				<div class="about-section">
+					<img class="about-img" src="food3.png" alt="Owner's Picture" />
+					<p>Experience the rich and authentic flavors of Nepal at Namaste Kitchen...</p>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section id="menu">
-    <hr class="line-break"/>
-		<h2>Our Menu</h2>
-		<p>Discover the authentic taste of Nepal.</p>
-		<button class="menu-button" on:click={toggleMenu}>View Menu</button>
-	</section>
+		<section id="menu">
+			<hr class="line-break"/>
+			<h2>Our Menu</h2>
+			<p>Discover the authentic taste of Nepal.</p>
+			<button class="menu-button" on:click={toggleMenu}>View Menu</button>
+		</section>
 
-
-	<section id="hours">
-    <hr class="line-break"/>
-		<h2>⏰ Our Hours</h2>
-		<div class="hours-container">
-			<div class="hours-box">
-				<p><strong>Monday</strong> <span class="closed">Closed</span></p>
-				<p><strong>Tuesday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
-				<p><strong>Wednesday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
-				<p><strong>Thursday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
-				<p><strong>Friday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
-        <p><strong>Saturday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
-        <p><strong>Sunday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
+		<section id="hours">
+			<hr class="line-break"/>
+			<h2>⏰ Our Hours</h2>
+			<div class="hours-container">
+				<div class="hours-box">
+					<p><strong>Monday</strong> <span class="closed">Closed</span></p>
+					<p><strong>Tuesday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
+					<p><strong>Wednesday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
+					<p><strong>Thursday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
+					<p><strong>Friday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
+					<p><strong>Saturday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
+					<p><strong>Sunday</strong> <br> 11:00 AM - 3:00 PM <br> 5:00 PM - 10:00 PM</p>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-  <section id="contact">
-    <hr class="line-break"/>
-    <h2>Contact Us</h2>
-    <p>We'd love to hear from you! You can reach us at:</p>
-    <p><strong>Phone:</strong> (540) 806-1219</p>
-    <p><strong>Email:</strong> namastekitchen03@gmail.com</p>
-    <p><strong>Address:</strong>  239 North Main Street, Blacksburg, VA</p>
-    <a href="tel:5408061219" aria-label="Call us">
-      <FontAwesomeIcon icon={faPhone} class="icon" />
-    </a>
-    <a href="mailto:namastekitchen03@gmail.com" aria-label="Email us">
-      <FontAwesomeIcon icon={faEnvelope} class="icon" />
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=100088281829800&mibextid=LQQJ4d" target="_blank" aria-label="Visit us on Facebook">
-      <FontAwesomeIcon icon={faFacebook} class="icon" />
-    </a>
-  </section>
+		<section id="contact">
+			<hr class="line-break"/>
+			<h2>Contact Us</h2>
+			<p>We'd love to hear from you! You can reach us at:</p>
+			<p><strong>Phone:</strong> (540) 806-1219</p>
+			<p><strong>Email:</strong> namastekitchen03@gmail.com</p>
+			<p><strong>Address:</strong>  239 North Main Street, Blacksburg, VA</p>
+			<!-- <a href="tel:5408061219" aria-label="Call us">
+				<FontAwesomeIcon icon={faPhone} class="icon" />
+			</a>
+			<a href="mailto:namastekitchen03@gmail.com" aria-label="Email us">
+				<FontAwesomeIcon icon={faEnvelope} class="icon" />
+			</a>
+			<a href="https://www.facebook.com/profile.php?id=100088281829800&mibextid=LQQJ4d" target="_blank" aria-label="Visit us on Facebook">
+				<FontAwesomeIcon icon={faFacebook} class="icon" />
+			</a> -->
+		</section>
 
-  <MenuModal isOpen={isMenuOpen} onClose={() => isMenuOpen = false} />
+		<MenuModal isOpen={isMenuOpen} onClose={() => isMenuOpen = false} />
+	</div>
 </body>
