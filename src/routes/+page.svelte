@@ -51,7 +51,7 @@
 
 	.background {
 		background: url('/namaste_landing.png') no-repeat center center fixed;
-		background-size: auto;
+		background-size: cover;
 		position: fixed;
 		width: 100%;
 		height: 100%;
@@ -96,32 +96,39 @@
 		font-weight: bold;
 	}
 
-	#about, #menu, #hours, #contact {
+	#about, #menu, #hours, #contact, #order {
 		text-align: center;
 		padding: 1em 0;
 		background-color: rgba(153, 51, 51, 0.8);
 		color: #fff;
-		font-size: 2em;
+		font-size: 1.5em;
 		font-family: 'Slabo 27px', serif;
+		margin: 1em; /* Added margin for all sections */
 	}
 
 	.about-section {
 		transition: opacity 0.5s ease, transform 0.5s ease;
 	}
 
+	.about-section p {
+		margin: 1.5em 2em;
+	}
+
 	.about-img {
 		display: block;
 		margin: 0 auto;
-		width: 25%;
-		aspect-ratio: 1;
+		width: 40%; /* Increased size of the about image */
+		height: auto;
+		object-fit: cover;
+		border-radius: 10px; /* Added rounding to the image */
 	}
 
-  .line-break {
-    border-radius: 5px;
-    height: 3px;
-    background: #ffffff;
-    width: 70%;
-  }
+	.line-break {
+		border-radius: 5px;
+		height: 3px;
+		background: #ffffff;
+		width: 70%;
+	}
 
 	#landing {
 		display: flex;
@@ -173,6 +180,11 @@
 		font-weight: bold;
 	}
 
+	#contact p {
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
 	@media only screen and (max-width: 767px) {
 		.about-section {
 			font-size: 0.8em;
@@ -196,6 +208,14 @@
 		#landing {
 			margin-top: 8em;
 		}
+		
+		nav ul li.desktop-only {
+			display: none;
+		}
+		
+		nav ul {
+			justify-content: space-between;
+		}
 	}
 
 	.menu-button {
@@ -207,6 +227,9 @@
 		text-decoration: none;
 		border-radius: 4px;
 		cursor: pointer;
+		&.order-now {
+			background-color: rgba(34, 193, 195, 0.9);
+		}
 	}
 
 	.menu-button:hover {
@@ -219,11 +242,12 @@
 	<div class="content">
 		<nav>
 			<ul style="display: flex; align-items: center; justify-content: space-evenly;">
-				<li style=""><a href="#landing" on:click={scrollToSection}>Home</a></li>
-				<li style=""><a href="#about" on:click={scrollToSection}>About</a></li>
 				<li><button class="menu-button" on:click={toggleMenu}>Menu</button></li>
-				<li style=""><a href="#hours" on:click={scrollToSection}>Hours</a></li>
-				<li style="margin-right: 1em;"><a href="#contact" on:click={scrollToSection}>Contact</a></li>
+				<li><a href="#landing" on:click={scrollToSection}>Home</a></li>
+				<li class="desktop-only"><a href="#about" on:click={scrollToSection}>About</a></li>
+				<li class="desktop-only"><a href="#hours" on:click={scrollToSection}>Hours</a></li>
+				<li class="desktop-only"><a href="#contact" on:click={scrollToSection}>Contact</a></li>
+				<li><a href="#order" on:click={scrollToSection}><button class="menu-button order-now">Order Now</button></a></li>
 			</ul>
 		</nav>
 
@@ -236,7 +260,7 @@
 			<div class="about-content">
 				<div class="about-section">
 					<img class="about-img" src="food3.png" alt="Owner's Picture" />
-					<p>Experience the rich and authentic flavors of Nepal at Namaste Kitchen...</p>
+					<p>Experience the rich and authentic flavors of Nepal at Namaste Kitchen. We serve traditional Nepali dishes, crafted with fresh ingredients and spices that capture the essence of the Himalayas.</p>
 				</div>
 			</div>
 		</section>
@@ -246,6 +270,15 @@
 			<h2>Our Menu</h2>
 			<p>Discover the authentic taste of Nepal.</p>
 			<button class="menu-button" on:click={toggleMenu}>View Menu</button>
+		</section>
+
+		<section id="order">
+			<hr class="line-break"/>
+			<h2>Ready to Order?</h2>
+			<p>Place your order online for pickup or delivery!</p>
+			<a href="https://www.namastekitchenva.com/order" target="_blank" rel="noopener noreferrer">
+				<button class="menu-button order-now">Order Now</button>
+			</a>
 		</section>
 
 		<section id="hours">
