@@ -64,16 +64,16 @@
     <div class="modal-backdrop" on:click|self={onClose}>
         <button class="close-button" on:click={onClose}>Close</button>
         <div class="modal-content">
-            <img src='namaste_menu_01.png' alt='page 1'>
-            <img src='namaste_menu_02.png' alt='page 2'>
-            <img src='namaste_menu_05.png' alt='page 3'>
-            <img src='namaste_menu_04.png' alt='page 4'>
-            <img src='namaste_menu_03.png' alt='page 5'>
-            <img src='namaste_menu_06.png' alt='page 6'>
-            <img src='namaste_menu_07.png' alt='page 7'>
-            <img src='namaste_menu_08.png' alt='page 8'>
-            <img src='namaste_menu_09.png' alt='page 9'>
-            <img src='namaste_menu_10.png' alt='page 10'>
+            <img src='namaste_menu-01.png' alt='page 1'>
+            <img src='namaste_menu-02.png' alt='page 2'>
+            <img src='namaste_menu-03.png' alt='page 3'>
+            <img src='namaste_menu-04.png' alt='page 4'>
+            <img src='namaste_menu-05.png' alt='page 5'>
+            <img src='namaste_menu-06.png' alt='page 6'>
+            <img src='namaste_menu-07.png' alt='page 7'>
+            <img src='namaste_menu-08.png' alt='page 8'>
+            <img src='namaste_menu-09.png' alt='page 9'>
+            <img src='namaste_menu-10.png' alt='page 10'>
 
         </div>
     </div>

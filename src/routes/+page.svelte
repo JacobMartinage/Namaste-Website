@@ -116,12 +116,12 @@
 		aspect-ratio: 1;
 	}
 
-  .line-break {
-    border-radius: 5px;
-    height: 3px;
-    background: #ffffff;
-    width: 70%;
-  }
+	.line-break {
+		border-radius: 5px;
+		height: 3px;
+		background: #ffffff;
+		width: 70%;
+	}
 
 	#landing {
 		display: flex;
@@ -200,17 +200,23 @@
 
 	.menu-button {
 		display: inline-block;
-		padding: 0.5em 1em;
+		padding: 0.75em 1.5em; /* Increased padding for a better button look */
 		margin: 0.5em;
 		background-color: rgba(222, 120, 65, 0.9);
 		color: white;
 		text-decoration: none;
+		border: 2px solid rgba(136, 9, 9, 0.78); /* Added border color */
 		border-radius: 4px;
 		cursor: pointer;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+		transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s; /* Smooth transition */
+		font-size: 1.2em; /* Increased font size */
 	}
 
 	.menu-button:hover {
 		background-color: rgb(0, 0, 0);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly more intense shadow on hover */
+		border-color: rgb(255, 39, 39); /* Change border color on hover */
 	}
 </style>
 
