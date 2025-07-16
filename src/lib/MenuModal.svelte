@@ -64,14 +64,17 @@
     <div class="modal-backdrop" on:click|self={onClose}>
         <button class="close-button" on:click={onClose}>Close</button>
         <div class="modal-content">
-            <img src='namaste_page_1.png' alt='page 1'>
-            <img src='namaste_page_2.png' alt='page 2'>
-            <img src='namaste_page_5.png' alt='page 3'>
-            <img src='namaste_page_4.png' alt='page 4'>
-            <img src='namaste_page_3.png' alt='page 5'>
-            <img src='namaste_page_6.png' alt='page 6'>
-            <img src='namaste_page_7.png' alt='page 7'>
-            <img src='namaste_page_8.png' alt='page 8'>
+            <img src='namaste-menu-update-july-2025-01.png' alt='page 1'>
+            <img src='namaste-menu-update-july-2025-02.png' alt='page 2'>
+            <img src='namaste-menu-update-july-2025-03.png' alt='page 3'>
+            <img src='namaste-menu-update-july-2025-04.png' alt='page 4'>
+            <img src='namaste-menu-update-july-2025-05.png' alt='page 5'>
+            <img src='namaste-menu-update-july-2025-06.png' alt='page 6'>
+            <img src='namaste-menu-update-july-2025-07.png' alt='page 7'>
+            <img src='namaste-menu-update-july-2025-08.png' alt='page 8'>
+            <img src='namaste-menu-update-july-2025-09.png' alt='page 9'>
+            <img src='namaste-menu-update-july-2025-10.png' alt='page 10'>
+            
 
         </div>
     </div>
