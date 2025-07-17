@@ -247,7 +247,7 @@
 				<li class="desktop-only"><a href="#about" on:click={scrollToSection}>About</a></li>
 				<li class="desktop-only"><a href="#hours" on:click={scrollToSection}>Hours</a></li>
 				<li class="desktop-only"><a href="#contact" on:click={scrollToSection}>Contact</a></li>
-				<li><a href="#order" on:click={scrollToSection}><button class="menu-button order-now">Order Now</button></a></li>
+				<!-- <li><a href="#order" on:click={scrollToSection}><button class="menu-button order-now">Order Now</button></a></li> -->
 			</ul>
 		</nav>
 

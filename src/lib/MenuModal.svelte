@@ -74,7 +74,8 @@
             <img src='namaste-menu-update-july-2025-08.png' alt='page 8'>
             <img src='namaste-menu-update-july-2025-09.png' alt='page 9'>
             <img src='namaste-menu-update-july-2025-10.png' alt='page 10'>
-            
+            <img src='namaste-drinks-menu-1.png' alt='page 11'>
+            <img src='namaste-drinks-menu-2.png' alt='page 12'>
 
         </div>
     </div>
