@@ -247,7 +247,7 @@
 				<li class="desktop-only"><a href="#about" on:click={scrollToSection}>About</a></li>
 				<li class="desktop-only"><a href="#hours" on:click={scrollToSection}>Hours</a></li>
 				<li class="desktop-only"><a href="#contact" on:click={scrollToSection}>Contact</a></li>
-				<!-- <li><a href="#order" on:click={scrollToSection}><button class="menu-button order-now">Order Now</button></a></li> -->
+				<li><a href="https://order.spoton.com/so-namaste-kitchen-22634/blacksburg-va/67afd30cb4ce2358bdb2121c" target="_blank" rel="noopener noreferrer"><button class="menu-button order-now">Order Now</button></a></li>
 			</ul>
 		</nav>
 
@@ -276,7 +276,7 @@
 			<hr class="line-break"/>
 			<h2>Ready to Order?</h2>
 			<p>Place your order online for pickup or delivery!</p>
-			<a href="https://www.namastekitchenva.com/order" target="_blank" rel="noopener noreferrer">
+			<a href="https://order.spoton.com/so-namaste-kitchen-22634/blacksburg-va/67afd30cb4ce2358bdb2121c" target="_blank" rel="noopener noreferrer">
 				<button class="menu-button order-now">Order Now</button>
 			</a>
 		</section>
